@@ -1,0 +1,162 @@
+/*Google Font import*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/*
+Cuerpos de texto: 12px
+Titulares (Basado en tu última visita/Ofertas): 24px
+Precios: 18px
+Descuentos: 16px
+Descripciones: 16px
+
+Paleta de colores:
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+/*Header*/
+header {
+    background-color: #EAC926;
+    width: 100%;
+}
+
+.logo-mercado-liebre {
+    width: 50%;
+    padding: 5%;
+}
+
+.search-bar {
+    padding-left: 5%;
+}
+
+.opportunities {
+    text-align: center;
+}
+
+.navigation{
+    margin: 0%;
+    padding: 0%;
+    display: none;
+}
+
+.burger-menu {
+    width: 40px;
+    font-size: 20px;
+    background-color: #1259c3;
+    color: white;
+    margin: auto;
+    text-align: center;
+    border-radius: 5px;
+    padding: 6px 0px;
+}
+
+.home-banner{
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+}
+
+/* /Header*/
+
+/*Main*/
+main{
+    width: 90%;
+    margin: auto;
+}
+p {
+    font-size: 12px;
+}
+
+.title {
+    font-size: 24px;
+}
+
+article{
+    margin-bottom: 10px;
+}
+
+.article-details{
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: white;
+}
+.article-img{
+    width: 100%;
+}
+
+.icon-send {
+    color: #39b54a;
+    padding: 8px;
+    border: solid 2px #39b54a;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin: 0%;
+    width: 40px;
+}
+
+.price {
+    font-size: 18px;
+    margin: 0%;
+}
+
+.discount {
+    font-size: 16px;
+    color: #39b54a;
+    margin: 0%;
+}
+
+.description {
+    font-size: 16px;
+    display: none;
+}
+
+/*/Main*/
+
+/*Footer*/
+footer {
+    text-align: center;
+    background-color: white;
+    padding: 10%;
+}
+
+footer p{
+    margin: 2%;
+}
+footer .icon {
+    font-size: 2em;
+    line-height: 10px;
+    color: #1259c3;
+    margin: 10% 0px 2% 0px;
+}
+/*/Footer*/
+
+/*Media queries*/
+/*Tablets*/
+@media (min-width: 361px){
+    .description{
+        display: block;
+    }
+    .burger-menu{
+        display: none;
+    }
+    article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .navigation{
+        display: block;
+    }
+}
+
+/*Desktop*/
+@media (min-width: 769px){
+    
+}
