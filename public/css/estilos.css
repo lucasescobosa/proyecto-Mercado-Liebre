@@ -181,7 +181,7 @@ article{
 footer {
     text-align: center;
     background-color: white;
-    padding: 10%;
+    padding: 2% 10%;
 }
 
 footer p{
@@ -191,16 +191,9 @@ footer .icon {
     font-size: 2em;
     line-height: 10px;
     color: #1259c3;
-    margin: 10% 0px 2% 0px;
+    margin: 5% 0px 2% 0px;
 }
 /*/Footer*/
-
-/*Register*/
-.register-form div{
-    display: block;
-    width:100%;
-    margin: 5%
-}
 
 /*Media queries*/
 /*Tablets*/
