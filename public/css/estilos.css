@@ -129,6 +129,7 @@ article{
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
+    position: relative;
 }
 .article-img{
     width: 100%;
@@ -145,16 +146,12 @@ article{
     background-color: #FFF;
     border-radius: 50%;
     position: absolute;
-    right: -90%;
-    top: -30px;
+    right: 20px;
+    top: -15px;
+}
 
-    /*color: #39b54a;
-    padding: 8px;
-    border: solid 2px #39b54a;
-    border-radius: 50%;
-    box-sizing: border-box;
-    margin: 0%;
-    width: 40px;*/
+.icon-send:hover{
+    transform: rotateZ(270deg);
 }
 
 .price {
@@ -182,8 +179,14 @@ footer {
     text-align: center;
     background-color: white;
     padding: 2% 10%;
-}
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 
+}
+footer section{
+    width: 30%;
+}
 footer p{
     margin: 2%;
 }
@@ -198,15 +201,17 @@ footer .icon {
 /*Media queries*/
 /*Tablets*/
 @media (min-width: 361px){
-    .description{
+    article:hover .description{
         display: block;
     }
     .burger-menu{
         display: none;
     }
     article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
         width: 45%;
+    }
+    article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
     .navigation{
         display: flex;

@@ -61,3 +61,6 @@ form .login-form{
     color: white;
     margin-bottom: 5%;
 }
+.login-form button:hover{
+    background-color: #0022AA;
+}
