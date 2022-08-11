@@ -7,11 +7,37 @@ form .register-form{
     margin: 5% 0;
 }
 
+.register-form span {
+    color: red;
+    font-size: 10px;
+    display: none;
+}
+
 .register-form div .name, .username, .birth, .address, .picture, .password, .password-check{
     width:100%;
     height: 30px;
     border: none;
     border-radius: 5px;
+}
+
+.register-form .name:invalid + span{
+    display: block;
+}
+
+.register-form .username:invalid + span{
+    display: block;
+}
+
+.register-form .address:invalid + span{
+    display: block;
+}
+
+.register-form .password:invalid + span{
+    display: block;
+}
+
+.register-form .password-check:invalid + span{
+    display: block;
 }
 
 .register-form div .birth{

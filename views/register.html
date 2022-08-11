@@ -15,14 +15,14 @@
 <body>
     <header>
         <div class="top-navbar">
-            <img src="/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre" class="logo-mercado-liebre">
+            <a href="/"><img src="/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre" class="logo-mercado-liebre"></a>
             <div class="search-bar">
                 <form action="/busqueda">
                     <input type="text" name="search" placeholder="Buscar productos, marcas">
                     <button type="submit"><i class="fas fa-search"></i></button>
                 </form>
             </div>
-            <p class="opportunities"><i class="fas fa-hand-holding-usd"></i></i>Comprá en cuotas y sin tarjeta de
+            <p class="opportunities"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de
                 crédito
             </p>
         </div>
@@ -49,17 +49,21 @@
     <main>
         <form action="/register" method="post" class="register-form">
             <div>
-                <input type="text" name="name" class="name" placeholder=" Nombre y Apellido">
+                <input type="text" name="name" class="name" placeholder=" Nombre y Apellido" minlength="3">
+                <span>Formato no válido</span>
             </div>
             <div>
-                <input type="text" name="username" class="username" placeholder=" Nombre de usuario">
+                <input type="text" name="username" class="username" placeholder=" Nombre de usuario" minlength="2">
+                <span>Formato no válido</span>
             </div>
             <div>
                 <label>Fecha de nacimiento: </label>
                 <input type="date" name="birth" id="birth" class="birth">
+                <span>Formato no válido</span>
             </div>
             <div>
-                <input type="text" name="address" class="address" placeholder=" Domicilio">
+                <input type="text" name="address" class="address" placeholder=" Domicilio" minlength="3">
+                <span>Formato no válido</span>
             </div>
             <div class="profile">
                 <label>Perfil de usuario: </label>
@@ -81,11 +85,13 @@
                 <input type="file" name="picture" accept=".jpg">
             </div>
             <div>
-                <input type="password" name="password" class="password" placeholder="Ingrese su contraseña">
+                <input type="password" name="password" class="password" placeholder="Ingrese su contraseña" minlength="8">
+                <span>La contraseña debe contener 8 caracteres</span>
             </div>
             <div>
-                <input type="password-check" name="password-check" class="password-check"
-                    placeholder="Confirmar contraseña">
+                <input type="password" name="password-check" class="password-check"
+                    placeholder="Confirmar contraseña" minlength="8">
+                <span>La contraseña debe contener 8 caracteres</span>
             </div>
             <button type="submit">Enviar</button>
             <button type="reset">Borrar</button>
@@ -110,9 +116,7 @@
             <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre
                 protegid@.</p>
         </section>
-        <section>
             <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
-        </section>
     </footer>
 </body>
 
